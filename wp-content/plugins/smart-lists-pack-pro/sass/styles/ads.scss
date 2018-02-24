@@ -1,0 +1,16 @@
+.bsac {
+
+  &.location-bssl_after {
+	margin-bottom: 30px;
+  }
+
+  &.location-bssl_before {
+	margin-top: 38px;
+	margin-bottom: 0;
+  }
+
+}
+
+.bs-smart-list + .location-bssl_after {
+  margin-top: 25px;
+}

@@ -1,0 +1,52 @@
+//
+// Newsletter Border Radius Inputs
+//
+@if ($newsletter_border_radius_inputs) {
+  .bs-subscribe-newsletter .newsletter-email {
+	border-radius: $newsletter_border_radius_inputs;
+  }
+  .bs-subscribe-newsletter .newsletter-subscribe {
+	border-bottom-right-radius: $newsletter_border_radius_inputs;
+	border-top-right-radius: $newsletter_border_radius_inputs;
+  }
+  .rtl {
+	.bs-subscribe-newsletter .newsletter-subscribe {
+	  border-bottom-left-radius: $newsletter_border_radius_inputs;
+	  border-top-left-radius: $newsletter_border_radius_inputs;
+	}
+  }
+}
+
+//
+// About Us -> Style 1
+//
+// # Text Align Left
+//
+// # Social Icons Border radius 100%
+//
+@if ($about_us_style == 'style-1') {
+  .ltr {
+	.bs-shortcode.bs-about > * {
+	  text-align: left;
+	}
+  }
+  .rtl {
+	.bs-shortcode.bs-about > * {
+	  text-align: right;
+	}
+  }
+  .bs-about .about-icons-list .about-icon-item {
+	margin: 0 9px 5px 0;
+  }
+  .bs-about .about-icons-list .about-icon-item a {
+	border-radius: 100%;
+	box-shadow: none !important;
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 30px;
+	height: 30px;
+  }
+  .bs-about .about-icons-list .about-icon-item a .fa {
+	line-height: 30px;
+	font-size: 13px;
+  }
+}
